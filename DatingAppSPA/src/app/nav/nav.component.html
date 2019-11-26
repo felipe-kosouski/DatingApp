@@ -4,19 +4,19 @@
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"
+        <a class="nav-link" [routerLink]="['/home']" 
           >Matches
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Lists</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/members']">Lists</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Messages</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/lists']" >Messages</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Messages</a>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/messages']" >Messages</a>
       </li>
     </ul>
 
